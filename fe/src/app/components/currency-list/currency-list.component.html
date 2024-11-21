@@ -1,0 +1,33 @@
+<div *ngIf="loading(); else content">
+  <p class="loading">Loading...</p>
+</div>
+
+<ng-template #content>
+  <div *ngIf="error(); else list">
+    <p class="error">{{ error() }}</p>
+  </div>
+
+  <ng-template #list>
+    <div class="table-container" *ngIf="requests() && requests().length > 0; else noRequests">
+      <table class="modern-table">
+        <thead>
+          <tr>
+            <th>Currency</th>
+            <th>Name</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let request of requests()">
+            <td>{{ request.currency }}</td>
+            <td>{{ request.name }}</td>
+            <td>{{ request.value }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ng-template #noRequests>
+      <p class="no-requests">No requests available.</p>
+    </ng-template>
+  </ng-template>
+</ng-template>

@@ -1,0 +1,33 @@
+<form  class="form">
+  <div class="form__group">
+    <input
+      class="form__input"
+      placeholder="Currency Code (e.g., USD)"
+      [(ngModel)]="currencyCode"
+      name="currencyCode"
+      required
+      (input)="onCurrencyCodeChange($event)"
+      [value]="currencyCode()"
+    />
+  </div>
+
+  <div class="form__group">
+    <input
+      class="form__input"
+      placeholder="Name"
+      [(ngModel)]="userName"
+      name="userName"
+      required
+      (input)="onUserNameChange($event)"
+      [value]="userName()"
+    />
+  </div>
+
+  <button
+    class="form__button"
+    [disabled]="!currencyCode || !userName"
+    (click)="submitRequest()"
+    [disabled]="!isFormValid()">
+    Submit
+  </button>
+</form>
