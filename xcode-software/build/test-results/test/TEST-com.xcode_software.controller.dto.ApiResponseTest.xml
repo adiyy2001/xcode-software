@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.xcode_software.controller.dto.ApiResponseTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-11-21T16:03:54" hostname="myhostname" time="0.006">
+  <properties/>
+  <testcase name="testBuilderWithoutDetails()" classname="com.xcode_software.controller.dto.ApiResponseTest" time="0.001"/>
+  <testcase name="testFailureResponse()" classname="com.xcode_software.controller.dto.ApiResponseTest" time="0.0"/>
+  <testcase name="testSuccessResponse()" classname="com.xcode_software.controller.dto.ApiResponseTest" time="0.001"/>
+  <testcase name="testBuilderWithDetails()" classname="com.xcode_software.controller.dto.ApiResponseTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

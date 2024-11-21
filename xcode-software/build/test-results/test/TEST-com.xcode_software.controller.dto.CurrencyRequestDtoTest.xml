@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.xcode_software.controller.dto.CurrencyRequestDtoTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-11-21T16:03:54" hostname="myhostname" time="0.066">
+  <properties/>
+  <testcase name="testSettersAndGetters()" classname="com.xcode_software.controller.dto.CurrencyRequestDtoTest" time="0.008"/>
+  <testcase name="testValidCurrencyRequestDto()" classname="com.xcode_software.controller.dto.CurrencyRequestDtoTest" time="0.03"/>
+  <testcase name="testInvalidCurrencyRequestDto_MissingName()" classname="com.xcode_software.controller.dto.CurrencyRequestDtoTest" time="0.01"/>
+  <testcase name="testInvalidCurrencyRequestDto_MissingBothFields()" classname="com.xcode_software.controller.dto.CurrencyRequestDtoTest" time="0.007"/>
+  <testcase name="testInvalidCurrencyRequestDto_MissingCurrency()" classname="com.xcode_software.controller.dto.CurrencyRequestDtoTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
